@@ -1,0 +1,14 @@
+code main.tf
+terraform init - to prepare working directory 
+terraform plan - new changes to infra
+terraform apply - to create or update infrastructure
+terraform destroy - to remove all infrastructure
+
+
+# we create resource group with which is called "name_of_resource_group_like_function_name"
+
+resource "azurerm_resource_group" "name_of_resource_group_like_function_name" { #
+  name     = "name_resource_group_terraform"
+  location = "West Europe"
+}
+
